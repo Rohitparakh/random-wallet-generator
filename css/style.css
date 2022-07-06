@@ -1,0 +1,78 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+span#downloadButton {
+  display: table;
+  margin: 0 auto;
+}
+
+span#downloadButton a {
+  text-decoration: none;
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 7px 10px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.25s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "monospace", sans-serif;
+}
+
+span#downloadButton a:hover {
+  background-color: rgb(43, 71, 154);
+}
+
+button {
+  text-decoration: none;
+  /* background-color: DodgerBlue; */
+  background: #fff;
+  border: 2px solid rgb(19, 93, 167);
+  color: rgb(19, 93, 167);
+  padding: 6px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.25s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "monospace", sans-serif;
+}
+
+span#downloadButton a:hover {
+  background-color: rgb(43, 71, 154);
+}
+
+.inputHolder {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  gap: 5px;
+  margin: 0 auto;
+}
+
+input[type="number"] {
+  text-align: center;
+}
+
+td a {
+  text-decoration: none;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}

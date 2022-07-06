@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/toast.css" />
+  </head>
+  <body>
+    <!-- Ethers JS-->
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.6.5/ethers.umd.min.js"
+      integrity="sha512-I4Y3hrJ61pL2aymRC78yONZgKS/jWxV3rCFgOWKaim/pU0LD39O4qSalfJK1DCr1uKAmTXGXTo8x2mVc7S/fcA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> -->
+    <script src="/scripts/ethers.js"></script>
+    <!-- File System JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/BrowserFS/2.0.0/browserfs.min.js"
+      integrity="sha512-mz0EI+Ay1uIJP7rZEX8C/JlTAcHRIQ8Sny4vxmmj8MSzDJgG9NxxY2pUmOGv1lO7imFIFMyjjCzEXEywNgaUdQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./scripts/shorten.js"></script>
+    <script src="./scripts/clipboard.js"></script>
+    <script src="./scripts/toast.js"></script>
+    <script data-main="scripts/index" src="scripts/require.js"></script>
+    <!-- <script type="module" src="./scripts/index.js"></script> -->
+    <br />
+    <br />
+    <br />
+    <div class="inputHolder">
+      <input id="numberOfUsers" type="number" value="1" min="1" />
+      <button
+        onclick="createUsers(document.getElementById('numberOfUsers').value)"
+      >
+        Create Users
+      </button>
+    </div>
+    <br />
+    <span id="downloadButton"></span>
+    <br />
+    <br />
+    <br />
+    <span id="tableHolder"></span>
+    <div id="snackbarHolder">
+      <div id="snackbar">Some text some message..</div>
+    </div>
+  </body>
+</html>
